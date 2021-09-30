@@ -91,26 +91,7 @@ modalCloses.forEach((modalClose) => {
     });
 });
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-/*let swiper = new Swiper(".swiper-container", {
-    cssMode: true,
-    loop: true,
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
-
-    mousewheel: true,
-    keyboard: true,
-});*/
-
-/*==================== TESTIMONIAL ====================*/
+/*==================== PORTFOLIO SWIPER ====================*/
 
 let testimonialSwiper = new Swiper(".portfolio__container", {
     loop: true,
@@ -129,6 +110,18 @@ let testimonialSwiper = new Swiper(".portfolio__container", {
     }*/
 });
 
+/*==================== SEND E-MAIL ====================*/
+const sendBtn = document.querySelector('.button_sendMsg');
+sendBtn.addEventListener('click', sendMail);
+
+function sendMail() {
+    window.location.href = "mailto:rustemandasov6@gmail.com"
+        + "?cc="
+        + "&subject=" + encodeURIComponent(document.getElementById('content__subject').value)
+        + "&body=" + encodeURIComponent("Hello, it's " + document.getElementById('content__name').value
+            + ".\n" + document.getElementById('content__body').value + "\n\n"
+            + "Contact me through this address: " + document.getElementById('content__email').value);
+}
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]');

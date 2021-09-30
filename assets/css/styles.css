@@ -511,35 +511,35 @@ img {
 }
 
 .skills__html {
-    width: 60%;
+    width: 100%;
 }
 
 .skills__vueJs {
-    width: 0;
+    width: 100%;
 }
 
 .skills__css {
-    width: 50%;
+    width: 100%;
 }
 
 .skills__js {
-    width: 65%;
+    width: 100%;
 }
 
 .skills__java {
-    width: 90%;
+    width: 100%;
 }
 
 .skills__maven {
-    width: 70%;
+    width: 100%;
 }
 
 .skills__sql {
-    width: 70%;
+    width: 100%;
 }
 
 .skills__git {
-    width: 75%;
+    width: 100%;
 }
 
 .skills__close .skills__list {
@@ -816,46 +816,6 @@ img {
     justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
-.testimonial__data,
-.testimonial__header {
-    display: flex;
-}
-
-.testimonial__data {
-    justify-content: space-between;
-    margin-bottom: var(--mb-1);
-}
-
-.testimonial__img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: var(--mb-0-75);
-}
-
-.testimonial__name {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-}
-
-.testimonial__client {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-}
-
-.testimonial__description {
-    margin-bottom: var(--mb-2-5);
-}
-
-.testimonial__icon-star {
-    color: var(--first-color);
-}
-
-.swiper-container .swiper-pagination-testimonial {
-    bottom: 0;
-}
-
 /*==================== CONTACT ME ====================*/
 .contact__container {
     row-gap: 3rem;
@@ -1117,6 +1077,12 @@ img {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .about__img {
+        width: 350px;
+    }
+}
+
 @media screen and (min-width: 767px) {
     .container {
         margin-left: auto;
@@ -1264,6 +1230,10 @@ img {
         column-gap: 3rem;
     }
 
+    .project__button {
+        margin-top: 8rem;
+    }
+
     .project__data {
         padding-top: .8rem;
     }
@@ -1292,6 +1262,11 @@ img {
     .footer__links,
     .footer__socials {
         margin-top: 1.5rem;
+    }
+
+    .show-scroll {
+        bottom: 2.5rem;
+        right: 2.5rem;
     }
 }
 
@@ -1323,10 +1298,6 @@ img {
         column-gap: 5rem;
     }
 
-    .project__button {
-        margin-top: 8rem;
-    }
-
     .swiper-portfolio-icon {
         font-size: 3.5rem;
     }
@@ -1349,11 +1320,6 @@ img {
 
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .show-scroll {
-        bottom: 2.5rem;
-        right: 2.5rem;
     }
 
     .footer__title,
