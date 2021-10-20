@@ -729,7 +729,7 @@ img {
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
-    overflow: initial;
+    overflow: hidden;
 }
 
 .portfolio__content {
