@@ -729,7 +729,7 @@ img {
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
-    overflow: hidden;
+    overflow: initial;
 }
 
 .portfolio__content {
@@ -1325,5 +1325,11 @@ img {
     .footer__title,
     .footer__subtitle {
         margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .portfolio__container {
+        overflow: hidden;
     }
 }
